@@ -74,10 +74,10 @@ const renderCheap = (data, date) => {
 
   // ==========================ДЗ=================
   const cheapTicketYearSort = cheapTicketYear.sort((a, b) => {
-    if (a.depart_date > b.depart_date) {
+    if (a.value > b.value) {
       return 1;
     }
-    if (a.depart_date < b.depart_date) {
+    if (a.value < b.value) {
       return -1;
     }
     // a должно быть равным b
