@@ -241,7 +241,7 @@ formSearch.addEventListener('submit', (event) => {
 //Вызовы функций
 
 getData(citiesApi, (data) => {
-  city = JSON.parse(data).filter(item => item.name && item.destination && item.origin);
+  city = JSON.parse(data).filter(item => item.name);
   city.sort((a, b) => {
     if (a.name > b.name) {
       return 1;
